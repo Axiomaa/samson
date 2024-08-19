@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+new_venv/
+.new_venv/
+venv/
+.venv/
+
+# Sensitive files
+.env
+config.json
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+*.egg-info/
+.installed.cfg
+*.egg
