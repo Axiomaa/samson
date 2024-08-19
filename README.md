@@ -19,8 +19,7 @@ Samson is a versatile Discord bot designed to enhance your server with a variety
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/samson-discord-bot.git
-   cd samson-discord-bot
+   git clone https://github.com/Axiomaa/samson.git
 
 2. Install the required dependencies:
     ```bash
