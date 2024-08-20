@@ -1,4 +1,4 @@
-# Samson Discord Bot
+# Samson - Discord Bot
 
 ## Description
 Samson is a versatile Discord bot designed to enhance your server with a variety of fun and administrative features. Whether you want to roll some dice, play music, or manage idle members, Samson has you covered.
@@ -26,7 +26,7 @@ Samson is a versatile Discord bot designed to enhance your server with a variety
     pip install -r requirements.txt
 
 ### Configuration
-1. Rename `data/config.example.json` to `config.json` and add your bot token and other configuration details:
+1. Rename `config.example.json` to `config.json` and add your bot token and other configuration details:
 ```json
 {
     "token": "YOUR_BOT_TOKEN_HERE",
@@ -86,7 +86,7 @@ samson_2.0/
 At this time, contributions are not being accepted. This repository is intended for educational and personal use only. Please feel free to fork the project for your own purposes.
 
 ## Licence
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENCE file for details.
 
 ## Contact Information
 If you have any questions or suggestions, feel free to reach out:
