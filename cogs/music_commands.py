@@ -6,7 +6,7 @@ class MusicCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(pass_context=True)
+    @commands.command(pass_context=True, name='pause', pause='Pause music.')
     async def pause(self, ctx):
         voice = discord.utils.get(self.bot.voice_clients, guild=ctx.guild)
         if voice and voice.is_playing():
@@ -14,7 +14,7 @@ class MusicCommands(commands.Cog):
         else:
             await ctx.channel.send("No music is playing.")
 
-    @commands.command(pass_context=True)
+    @commands.command(pass_context=True, name='resume', resume='Resume playing music.')
     async def resume(self, ctx):
         voice = discord.utils.get(self.bot.voice_clients, guild=ctx.guild)
         if voice and voice.is_paused():
@@ -22,7 +22,7 @@ class MusicCommands(commands.Cog):
         else:
             await ctx.channel.send("No song is paused at the moment.")
     
-    @commands.command(pass_context=True)
+    @commands.command(pass_context=True, name='stop', stop='Stop playing music.')
     async def stop(self, ctx):
         voice = discord.utils.get(self.bot.voice_clients, guild=ctx.guild)
         if voice and voice.is_playing():
@@ -30,7 +30,7 @@ class MusicCommands(commands.Cog):
         else:
             await ctx.channel.send("No music is playing.")
 
-    @commands.command(pass_context=True)
+    @commands.command(pass_context=True, name='play', play='Play music from provided URL.')
     async def play(self, ctx, *, arg):
         try:
             voice = ctx.guild.voice_client

@@ -7,7 +7,7 @@ class Diceroll(commands.Cog):
         self.bot = bot
 
     # Diceroller
-    @commands.command()
+    @commands.command(name='roll', roll='Roll dice.')
     async def roll(self, ctx, *, value: str):
         try:
             result, roll = diceroller.dice_roll(value)

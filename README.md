@@ -60,12 +60,16 @@ Here are some of the key commands Samson supports:
     - `!kill`: Shut down the bot safely (requires admin role).
     - `!idle`: Check which members have been inactive. (Recommended to only use in small servers.)
 
+- Other:
+    - `!help`: Display all commands available for Samson.
+
 ## Folder Structure
 ```
 samson_2.0/
 │
 ├── cogs/                    # Command modules
 │   ├── dice_roll.py         # Dice roll command
+│   ├── help_commands.py     # Custom help command
 │   ├── idle_check.py        # Idle check command
 │   ├── kill_command.py      # Kill command
 │   ├── music_commands.py    # Music commands

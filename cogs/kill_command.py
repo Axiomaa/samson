@@ -14,7 +14,7 @@ class KillSwitch(commands.Cog):
         self.bot = bot
 
     # Kill switch
-    @commands.command()
+    @commands.command(name='kill', kill='Shuts down Samson')
     async def kill(self, ctx):
         if any(role.name in admin_roles for role in ctx.author.roles):
             try:

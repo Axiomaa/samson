@@ -5,13 +5,12 @@ class VoiceCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(name='join', join='Make Samson join a voice channel.')
     async def join(self, ctx):
         try:
             if ctx.author.voice:
                 channel = ctx.author.voice.channel
                 await channel.connect()
-                #voice = await channel.connect()
             else:
                 await ctx.channel.send("You are not in a voice channel.")
 
@@ -19,7 +18,7 @@ class VoiceCommands(commands.Cog):
             print(f"An error occurred: {e}")
             await ctx.channel.send("An errror occurred processing your command.")
 
-    @commands.command()
+    @commands.command(name='leave', leave='Make Samson leave the voice channel.')
     async def leave(self, ctx):
         try:
             if (ctx.voice_client):

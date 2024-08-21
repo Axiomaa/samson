@@ -5,7 +5,7 @@ class RateMe(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(name='rate', rate='Rate anything!')
     async def rate(self, ctx, *, thing: str):
         try:
             if ctx.author == self.bot.user:

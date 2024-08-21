@@ -15,7 +15,7 @@ class IdleCheck(commands.Cog):
         self.bot = bot
 
     # Idle check
-    @commands.command()
+    @commands.command(name='idle', idle='Checks for member activity the last 3 weeks and displays latest activity.')
     async def idle(self, ctx):
         if any(role.name in admin_roles for role in ctx.author.roles):
             try:
